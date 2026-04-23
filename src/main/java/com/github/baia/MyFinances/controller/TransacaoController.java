@@ -19,7 +19,7 @@ public class TransacaoController {
         return repository.findAll();
     }
 
-    // METODO PARA SALVAR (Quando você clica no botão do Dashboard)
+    // METODO PARA SALVAR (Quando cliar no botão do Dashboard)
     @PostMapping
     public Transacao salvar(@RequestBody Transacao transacao) {
         return repository.save(transacao); // Salva no MySQL e retorna o que foi salvo
